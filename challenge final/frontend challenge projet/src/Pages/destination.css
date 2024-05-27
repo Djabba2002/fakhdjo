@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #29d9d5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    
+}
+
+.todo-input {
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.todo-input button {
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background-color: #4cae4c;
+}
+
+.todo-stats {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.todo-list .todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.todo-list .todo h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.todo-list .todo span {
+    flex-grow: 1;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.todo-list .todo .price {
+    color: red;
+    font-size: 1.5em;
+}
+
+.todo-list .todo button {
+    border: none;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.todo-list .todo button:hover {
+    background-color: #c9302c;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+}
